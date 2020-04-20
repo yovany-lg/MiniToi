@@ -1,0 +1,20 @@
+{
+  "name": "robotois-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sudo node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crc": "^3.8.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mqtt": "^3.0.0",
+    "rpio": "^2.1.1"
+  }
+}

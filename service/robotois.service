@@ -1,0 +1,17 @@
+[Unit]
+Description=Robotois Server - Backend application
+Wants=mosquitto.service
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/robotois-backend/src
+ExecStart=/usr/bin/node index.js
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=robotois-backend
+#Environment=NODE_ENV=production PORT=1337
+
+[Install]
+WantedBy=multi-user.target
